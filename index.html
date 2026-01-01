@@ -1,101 +1,126 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Company Profile</title>
-  <!-- Bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PT Ternak Ayam Sejahtera</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- AOS CSS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#home">SanuraFarm</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <a class="navbar-brand fw-semibold" href="#">TernakAyam</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
-        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+        <li class="nav-item"><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- hero -->
-<section id="home" class="hero reveal">
-  <div class="container text-center">
-    <h1 class="fw-bold text-light">Simple & Elegant Company</h1>
-    <p class="mt-3 text-light">Membangun solusi modern dengan pendekatan profesional.</p>
-    <a href="#contact" class="btn btn-light mt-4">Hubungi Kami</a>
-  </div>
-</section>
-
-<!-- about -->
-<section id="about" class="section-padding reveal">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-3">Tentang Kami</h2>
-    <p class="text-muted">
-      Perusahaan ini hadir sebagai bentuk komitmen dalam menghadirkan solusi yang sederhana, efektif, dan berkelanjutan di bidang usaha yang dijalankan. Dengan mengedepankan kualitas, ketepatan proses, serta profesionalisme, kami berupaya membangun kepercayaan melalui setiap layanan dan produk yang kami tawarkan. Setiap tahapan kerja dilakukan secara terencana agar hasil yang diberikan sesuai dengan kebutuhan dan harapan klien.
-      Dalam perkembangannya, perusahaan ini terus beradaptasi dengan perubahan dan kemajuan teknologi tanpa meninggalkan nilai dasar seperti konsistensi, tanggung jawab, dan etika kerja. Kami percaya bahwa kolaborasi, inovasi, dan perhatian terhadap detail merupakan kunci dalam menciptakan hasil yang bernilai. Melalui pendekatan tersebut, perusahaan ini berkomitmen untuk tumbuh secara berkelanjutan dan memberikan kontribusi positif bagi lingkungan serta masyarakat.
+<!-- HERO -->
+<header class="hero d-flex align-items-center text-center">
+  <div class="container" data-aos="fade-up">
+    <h1 class="display-5 fw-bold mb-3">
+      Solusi Ternak Ayam Modern & Berkualitas
+    </h1>
+    <p class="lead mb-4">
+      Ayam sehat, pakan berkualitas, dan sistem peternakan terpercaya.
     </p>
+    <a href="#produk" class="btn btn-warning px-4 py-2 fw-semibold">
+      Lihat Produk
+    </a>
   </div>
-</section>
+</header>
 
-<!-- SERVICE -->
-<section id="service" class="section-padding bg-light reveal">
+<!-- TENTANG -->
+<section id="tentang" class="py-5">
   <div class="container">
-    <h2 class="fw-bold text-center mb-5">Layanan</h2>
-    <div class="row text-center g-4">
-      <div class="col-md-4">
-        <h5>Konsultasi</h5>
-        <p class="text-muted">Pendampingan profesional dan terarah.</p>
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <h2 class="fw-semibold mb-3">Tentang Kami</h2>
+        <p class="text-muted">
+          PT Ternak Ayam Sejahtera bergerak di bidang peternakan ayam
+          dengan fokus kualitas, kebersihan, dan keberlanjutan.
+        </p>
       </div>
-      <div class="col-md-4">
-        <h5>Produksi</h5>
-        <p class="text-muted">Proses kerja efisien dan terstandarisasi.</p>
-      </div>
-      <div class="col-md-4">
-        <h5>Distribusi</h5>
-        <p class="text-muted">Pengiriman tepat waktu dan aman.</p>
+
+      <div class="col-md-6 text-center" data-aos="fade-left">
+        <img
+          src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7"
+          class="img-fluid rounded"
+          alt="Peternakan Ayam"
+        />
       </div>
     </div>
   </div>
 </section>
 
-<!-- galeri sama card -->
-<section id="gallery" class="section-padding reveal">
+<!-- PRODUK -->
+<section id="produk" class="py-5 bg-light">
   <div class="container">
-    <h2 class="fw-bold text-center mb-5">Gallery</h2>
+    <h2 class="text-center fw-semibold mb-5" data-aos="fade-up">
+      Produk Kami
+    </h2>
+
     <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="img/doc.png" class="Ayam" alt="image 1">
-          <div class="card-body">
-            <p class="card-text text-center">DOC</p>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card product-card h-100">
+          <img src="https://images.unsplash.com/photo-1606788075761-7c39c6c2f6c4" class="card-img-top">
+          <div class="card-body text-center">
+            <h5>Ayam Broiler</h5>
+            <p class="text-muted">Ayam potong sehat dan berkualitas.</p>
+            <button class="btn btn-outline-success">Rp 35.000</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="img/ayamgrower.jpg" class="ayamgrower" alt="image 2">
-          <div class="card-body">
-            <p class="card-text text-center">Ayam Grower</p>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card product-card h-100">
+          <img src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1" class="card-img-top">
+          <div class="card-body text-center">
+            <h5>Ayam Petelur</h5>
+            <p class="text-muted">Produktif dan tahan lama.</p>
+            <button class="btn btn-outline-success">Rp 50.000</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="img/ayampedaging.jpg" class="ayampedaging" alt="image 3">
-          <div class="card-body">
-            <p class="card-text text-center">Ayam Pedaging</p>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25" class="card-img-top">
+          <div class="card-body text-center">
+            <h5>Pakan Ayam</h5>
+            <p class="text-muted">Nutrisi lengkap.</p>
+            <button class="btn btn-outline-success">Rp 320.000</button>
           </div>
         </div>
       </div>
@@ -103,35 +128,46 @@
   </div>
 </section>
 
-<!-- kontak -->
-<section id="contact" class="section-padding bg-light reveal">
+<!-- KEUNGGULAN -->
+<section id="keunggulan" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-semibold mb-5" data-aos="fade-up">Keunggulan</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up">Kualitas Terjamin</div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">Harga Kompetitif</div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">Distribusi Aman</div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak" class="py-5 bg-light">
   <div class="container">
-    <h2 class="fw-bold text-center mb-4">Contact</h2>
+    <h2 class="text-center fw-semibold mb-4" data-aos="fade-up">Hubungi Kami</h2>
     <div class="row justify-content-center">
-      <div class="col-md-6">
-        <form id="contactForm">
-          <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Nama" required>
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Email" required>
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" rows="4" placeholder="Pesan" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark w-100">Kirim</button>
+      <div class="col-md-6" data-aos="fade-up">
+        <form>
+          <input class="form-control mb-3" placeholder="Nama" required>
+          <input class="form-control mb-3" type="email" placeholder="Email" required>
+          <textarea class="form-control mb-3" rows="4" placeholder="Pesan"></textarea>
+          <button class="btn btn-success w-100">Kirim</button>
         </form>
       </div>
     </div>
   </div>
 </section>
-<!-- footer -->
-<footer class="text-center py-3">
-  <p class="mb-0">© 2025 SanuraFarm</p>
+
+<footer class="bg-dark text-white text-center py-3">
+  © 2026 PT Ternak Ayam Sejahtera
 </footer>
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- js -->
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Custom JS -->
 <script src="js/main.js"></script>
 </body>
 </html>
