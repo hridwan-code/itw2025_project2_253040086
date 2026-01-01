@@ -13,7 +13,7 @@ body { padding-top: 70px; }
 /* HERO */
 .hero {
   min-height: 70vh;
-  background: url("img/hero.jpg") center/cover no-repeat;
+  background: url("../img/bgayam.jpg") center/cover no-repeat;
 }
 
 .hero-overlay {
@@ -39,3 +39,8 @@ body { padding-top: 70px; }
 
 /* Scroll anchor offset */
 section { scroll-margin-top: 80px; }
+
+/* navbar */
+.navbar ul li {
+   color: #fff;
+}
