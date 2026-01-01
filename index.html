@@ -1,11 +1,11 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Company Ternak Ayam</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- BOOTSTRAP -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- AOS -->
@@ -14,19 +14,16 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#home">TernakAyam</a>
-
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+    <a class="navbar-brand fw-bold text-primary" href="#home">TernakAyam</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="menu">
+    <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
@@ -38,21 +35,28 @@
   </div>
 </nav>
 
-<!-- HERO -->
-<header id="home" class="hero d-flex align-items-center">
-  <div class="container text-center text-white" data-aos="fade-up">
-    <h1 class="fw-bold">Perusahaan Ternak Ayam Modern</h1>
-    <p class="lead">Ayam sehat, pakan berkualitas, distribusi terpercaya</p>
-    <a href="#produk" class="btn btn-warning">Lihat Produk</a>
+<!-- HERO / HOME -->
+<section id="home" class="hero">
+  <div class="hero-overlay">
+    <div class="container text-center" data-aos="fade-up">
+      <h1 class="fw-bold mb-3">Perusahaan Ternak Ayam Modern</h1>
+      <p class="mb-4">
+        Solusi ayam sehat, pakan berkualitas, dan distribusi terpercaya
+      </p>
+      <a href="#produk" class="btn btn-light btn-lg">
+        Lihat Produk
+      </a>
+    </div>
   </div>
-</header>
+</section>
 
 <!-- TENTANG -->
 <section id="tentang" class="py-5">
   <div class="container" data-aos="fade-up">
-    <h2 class="text-center mb-4">Tentang Kami</h2>
+    <h2 class="text-center mb-3">Tentang Kami</h2>
     <p class="text-center text-muted">
-      Kami bergerak di bidang peternakan ayam dengan sistem modern dan higienis.
+      Kami bergerak di bidang peternakan ayam dengan sistem modern,
+      higienis, dan berkelanjutan.
     </p>
   </div>
 </section>
@@ -63,41 +67,35 @@
     <h2 class="text-center mb-5" data-aos="fade-up">Produk</h2>
 
     <div class="row g-4">
-
-      <!-- CARD -->
       <div class="col-md-4" data-aos="zoom-in">
-        <div class="card h-100">
-          <img src="img/ayam1.jpg" class="card-img-top" alt="Ayam Broiler">
-          <div class="card-body text-center">
+        <div class="card product-card h-100 text-center">
+          <div class="card-body">
             <h5>Ayam Broiler</h5>
             <p class="text-muted">Ayam potong sehat</p>
-            <button class="btn btn-success">Rp 35.000</button>
+            <button class="btn btn-outline-primary">Rp 35.000</button>
           </div>
         </div>
       </div>
 
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="card h-100">
-          <img src="img/ayam2.jpg" class="card-img-top" alt="Ayam Petelur">
-          <div class="card-body text-center">
+        <div class="card product-card h-100 text-center">
+          <div class="card-body">
             <h5>Ayam Petelur</h5>
             <p class="text-muted">Produktif & tahan lama</p>
-            <button class="btn btn-success">Rp 50.000</button>
+            <button class="btn btn-outline-primary">Rp 50.000</button>
           </div>
         </div>
       </div>
 
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="card h-100">
-          <img src="img/pakan.jpg" class="card-img-top" alt="Pakan Ayam">
-          <div class="card-body text-center">
+        <div class="card product-card h-100 text-center">
+          <div class="card-body">
             <h5>Pakan Ayam</h5>
             <p class="text-muted">Nutrisi lengkap</p>
-            <button class="btn btn-success">Rp 320.000</button>
+            <button class="btn btn-outline-primary">Rp 320.000</button>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -107,9 +105,9 @@
   <div class="container" data-aos="fade-up">
     <h2 class="text-center mb-4">Layanan</h2>
     <div class="row text-center">
-      <div class="col-md-4">Konsultasi</div>
+      <div class="col-md-4">Konsultasi Ternak</div>
       <div class="col-md-4">Distribusi</div>
-      <div class="col-md-4">Kemitraan</div>
+      <div class="col-md-4">Kemitraan Usaha</div>
     </div>
   </div>
 </section>
@@ -122,20 +120,20 @@
       <div class="col-md-6">
         <input class="form-control mb-3" placeholder="Nama">
         <input class="form-control mb-3" placeholder="Email">
-        <textarea class="form-control mb-3" placeholder="Pesan"></textarea>
-        <button class="btn btn-success w-100">Kirim</button>
+        <textarea class="form-control mb-3" rows="4" placeholder="Pesan"></textarea>
+        <button class="btn btn-primary w-100">Kirim</button>
       </div>
     </div>
   </div>
 </section>
 
-<footer class="text-center py-3 bg-dark text-white">
-  © 2026 Ternak Ayam
+<footer class="bg-primary text-white text-center py-3">
+  © 2026 Company Ternak Ayam
 </footer>
 
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/main.js"></script>
+<script src="js/animasi.js"></script>
 </body>
 </html>

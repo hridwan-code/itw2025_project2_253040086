@@ -1,27 +1,41 @@
-body {
-  font-family: 'Poppins', sans-serif;
-    padding-top: 80px;
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
 }
+
+/* Navbar fixed offset */
+body { padding-top: 70px; }
 
 /* HERO */
 .hero {
-  background: linear-gradient(
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0.55)
-  ),
-  url("../img/bgayam.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 90vh;
-  color: white;
+  min-height: 70vh;
+  background: url("img/hero.jpg") center/cover no-repeat;
 }
 
-/* PRODUCT CARD HOVER */
+.hero-overlay {
+  min-height: 70vh;
+  background: rgba(227, 242, 253, 0.75); /* biru muda transparan */
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 { color: #0d47a1; }
+.hero p  { color: #0d47a1; }
+
+/* Card hover */
 .product-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }
 
-.product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-}
+/* Scroll anchor offset */
+section { scroll-margin-top: 80px; }
