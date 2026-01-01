@@ -1,0 +1,27 @@
+body {
+  font-family: 'Poppins', sans-serif;
+    padding-top: 80px;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+  ),
+  url("../img/bgayam.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  color: white;
+}
+
+/* PRODUCT CARD HOVER */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
