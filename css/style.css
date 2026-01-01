@@ -41,6 +41,6 @@ body { padding-top: 70px; }
 section { scroll-margin-top: 80px; }
 
 /* navbar */
-.navbar ul li {
-   color: #fff;
+.navbar .nav-link {
+  color: #ffffff !important;
 }
