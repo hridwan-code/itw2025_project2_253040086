@@ -1,14 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 * { box-sizing: border-box; }
 
 html, body {
   margin: 0;
   padding: 0;
   overflow-y: auto;
-  font-family: Arial, sans-serif;
+  font-family: alfa slab one regular;
 }
-
-/* Navbar fixed offset */
-body { padding-top: 70px; }
 
 /* HERO */
 .hero {
@@ -23,7 +22,7 @@ body { padding-top: 70px; }
   background: rgba(227, 242, 253, 0.75); 
   display: flex;
   align-items: center;
-    position: absolute;
+  position: absolute;
   inset: 0; /* top:0 right:0 bottom:0 left:0 */
 }
 
@@ -40,11 +39,21 @@ body { padding-top: 70px; }
   transform: translateY(-6px);
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }
-
-/* bagian scroll */
-section { scroll-margin-top: 80px; }
-
+/* tentang */
+.containerdua p{
+    color: #ffffff !important;
+}
 /* navbar */
 .navbar .nav-link {
   color: #ffffff !important;
 }
+.navbar{
+  font-family: lobster;
+}
+/* Navbar fixed offset */
+body { padding-top: 70px; }
+
+
+/* bagian scroll */
+section { scroll-margin-top: 80px; }
+
