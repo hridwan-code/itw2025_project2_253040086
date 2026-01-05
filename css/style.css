@@ -14,13 +14,17 @@ body { padding-top: 70px; }
 .hero {
   min-height: 70vh;
   background: url("../img/bgayam.jpg") center/cover no-repeat;
+  position: relative;
+
 }
 
 .hero-overlay {
   min-height: 70vh;
-  background: rgba(227, 242, 253, 0.75); /* biru muda transparan */
+  background: rgba(227, 242, 253, 0.75); 
   display: flex;
   align-items: center;
+    position: absolute;
+  inset: 0; /* top:0 right:0 bottom:0 left:0 */
 }
 
 .hero h1 { color: #0d47a1; }
@@ -37,7 +41,7 @@ body { padding-top: 70px; }
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }
 
-/* Scroll anchor offset */
+/* bagian scroll */
 section { scroll-margin-top: 80px; }
 
 /* navbar */
