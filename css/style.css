@@ -5,14 +5,14 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-y: auto;
+  overflow-y: au;
   font-family: alfa slab one regular;
 }
 
 /* HERO */
 .hero {
   min-height: 70vh;
-  background: url("../img/bgayam.jpg") center/cover no-repeat;
+  background: url("../img/bgayamkub.jpeg") center/cover no-repeat;
   position: relative;
 
 }
@@ -23,7 +23,7 @@ html, body {
   display: flex;
   align-items: center;
   position: absolute;
-  inset: 0; /* top:0 right:0 bottom:0 left:0 */
+  inset: 0;  
 }
 
 .hero h1 { color: #0d47a1; }
@@ -43,6 +43,11 @@ html, body {
 .containerdua p{
     color: #ffffff !important;
 }
+
+/* layanan */
+.container {
+    color: #ffffff !important;
+}
 /* navbar */
 .navbar .nav-link {
   color: #ffffff !important;
@@ -50,8 +55,8 @@ html, body {
 .navbar{
   font-family: lobster;
 }
-/* Navbar fixed offset */
-body { padding-top: 70px; }
+/* Navbar fixed */
+body { padding-top: -40px; }
 
 
 /* bagian scroll */
