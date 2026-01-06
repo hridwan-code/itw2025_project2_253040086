@@ -30,12 +30,12 @@ html, body {
 .hero p  { color: #0d47a1; }
 
 /* Card hover */
-.product-card {
+.card {
   border: none;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   transition: transform .3s ease, box-shadow .3s ease;
 }
-.product-card:hover {
+.card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }
@@ -44,9 +44,18 @@ html, body {
     color: #ffffff !important;
 }
 
+/* produk */
+.container h2{
+  color: #000000 !important;
+}
+
 /* layanan */
 .container {
     color: #ffffff !important;
+}
+#layanan,
+#layanan * {
+  color: #fff;
 }
 /* navbar */
 .navbar .nav-link {
